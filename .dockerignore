@@ -1,0 +1,6 @@
+dist
+tmp
+.gitignore
+Makefile
+readme.md
+Dockerfile
