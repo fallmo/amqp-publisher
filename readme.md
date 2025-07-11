@@ -3,10 +3,15 @@
 HELP
 
 ```
+Usage:
+amqp-publisher publish [--flags] [message]
+
+
 Examples:
 amqp-publisher publish --amqp-uri "amqp://localhost:5672" --queue events hello
 amqp-publisher publish --amqp-uri "amqp://localhost:5672" --queue events --content-type application/json '{"msg": "hello"}'
 AMQP_URI="amqp://localhost:5672" amqp-publisher publish  --queue events --immediate hello
+
 
 Flags:
       --amqp-uri string       URI connection string to AMQP server
